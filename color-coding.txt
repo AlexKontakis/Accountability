@@ -1,0 +1,79 @@
+Accountability.gr — Color Coding Reference
+==========================================
+
+This file documents the section-based color scheme used on the website.
+
+
+SECTION COLORS
+--------------
+
+Header (Red)
+  Primary:   #dc2626  (--header-red)
+  Dark:      #b91c1c  (--header-red-dark)
+  Text:      #ffffff  (--text-on-red)
+
+  Applied to:
+  - Top call bar (.call-bar)
+  - Main navigation header (.header)
+  - Logo and nav links
+  - Mobile slide-out menu
+
+
+Body (Green)
+  Primary:   #16a34a  (--body-green)
+  Light:     #22c55e  (--body-green-light)
+  Pale:      #bbf7d0  (--body-green-pale)
+  Background:#dcfce7  (--body-green-bg)
+  Card:      #ecfdf5  (--card-bg)
+  Text:      #14532d  (--text-on-green)
+  Muted:     #166534  (--text-muted)
+
+  Applied to:
+  - Page background (body)
+  - Hero section
+  - Stats section
+  - Services section
+  - Reviews section
+  - Why Us section
+  - Contact section
+  - All content cards and stat blocks
+
+
+Footer (Yellow)
+  Primary:   #facc15  (--footer-yellow)
+  Dark:      #ca8a04  (--footer-yellow-dark)
+  Text:      #713f12  (--text-on-yellow)
+
+  Applied to:
+  - Site footer (.footer)
+
+
+Buttons (Orange)
+  Primary:   #f97316  (--button-orange)
+  Dark:      #ea580c  (--button-orange-dark)
+  Light:     #fb923c  (--button-orange-light)
+  Text:      #ffffff  (--text-on-orange)
+
+  Applied to:
+  - Primary buttons (.btn-primary)
+  - Outline buttons (.btn-outline, .btn-outline-dark)
+  - Service badges (.badge)
+  - Star ratings (.stars)
+  - List checkmarks
+  - Nav link hover state
+  - Popular service card borders
+  - Price highlights and review source labels
+
+
+CSS VARIABLES (styles.css)
+--------------------------
+All colors are defined in :root at the top of styles.css.
+Update the variables there to change colors site-wide.
+
+
+QUICK MAP
+---------
+Red     → Header & call bar
+Green   → All main page content / body sections
+Yellow  → Footer
+Orange  → All buttons and interactive accents
