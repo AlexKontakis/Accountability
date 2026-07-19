@@ -179,19 +179,7 @@ img {
   transition: color 0.2s;
 }
 
-.nav a.btn-nav-qna {
-  background: var(--button-orange);
-  color: var(--text-on-orange);
-  padding: 0.4rem 1rem;
-  border-radius: 999px;
-  font-weight: 600;
-  transition: background 0.2s, transform 0.2s;
-}
 
-.nav a.btn-nav-qna:hover {
-  background: var(--button-orange-light);
-  transform: translateY(-1px);
-}
 
 .nav a:hover {
   color: var(--button-orange-light);
