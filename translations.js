@@ -5,6 +5,7 @@ const translations = {
       "nav.home": "Home",
       "nav.reviews": "Reviews",
       "nav.services": "Services",
+      "nav.qna": "Frequently Asked Questions",
       "nav.contact": "Contact",
       "nav.openMenu": "Open menu",
       "lang.switchToEl": "Switch to Greek",
@@ -76,13 +77,17 @@ const translations = {
       "contact.title": "Contact Us",
       "contact.address": "123 Main Street, City, 00000",
       "contact.hours": "Monday – Friday: 09:00 – 17:00",
-      "footer.copyright": "© 2026 Accountability. All rights reserved."
+      "footer.copyright": "© 2026 Accountability. All rights reserved.",
+      "qna.title1": "When is a rent increase legal?",
+      "qna.parag1": "If there is no rent adjustment clause, the landlord cannot unilaterally increase the rent during the lease term. According to the Greek Consumers' Union (EEKE), a rent increase is lawful only when it is stipulated in the signed contract. Specifically, if the contract contains a written clause providing for, say, a 3% annual increase, the landlord may implement it. If there is no rent adjustment clause, the landlord cannot unilaterally increase the rent during the lease term."
+      
     },
     el: {
       callBar: "📞 Επικοινωνήστε μαζί μας σήμερα!",
       "nav.home": "Αρχική",
       "nav.reviews": "Κριτικές",
       "nav.services": "Υπηρεσίες",
+      "nav.qna": "Συχνά ερωτήματατα",
       "nav.contact": "Επικοινωνία",
       "nav.openMenu": "Άνοιγμα μενού",
       "lang.switchToEl": "Αλλαγή σε Ελληνικά",
@@ -154,7 +159,9 @@ const translations = {
       "contact.title": "Επικοινωνήστε Μαζί Μας",
       "contact.address": "Οδός Παράδειγμα 123, Πόλη, 00000",
       "contact.hours": "Δευτέρα – Παρασκευή: 09:00 – 17:00",
-      "footer.copyright": "© 2026 Accountability. Με επιφύλαξη παντός δικαιώματος."
+      "footer.copyright": "© 2026 Accountability. Με επιφύλαξη παντός δικαιώματος.",
+      "qna.title1":  "Πότε είναι νόμιμη η αύξηση του ενοικίου",
+      "qna.parag1": "Αν δεν υπάρχει κανένας όρος για αναπροσαρμογή, ο ιδιοκτήτης δεν μπορεί μονομερώς να αυξήσει το ενοίκιο στη διάρκεια της μίσθωσης. Μια αύξηση ενοικίου είναι νόμιμη μόνο όταν προβλέπεται στην υπογεγραμμένη σύμβαση, σύμφωνα με την Ένωση Εργαζομένων Καταναλωτών Ελλάδας (ΕΕΚΕ). Ειδικότερα, αν υπάρχει γραπτός όρος στη σύμβαση που προβλέπει π.χ. ετήσια αύξηση 3%, τότε ο ιδιοκτήτης μπορεί να την εφαρμόσει. Αν δεν υπάρχει κανένας όρος για αναπροσαρμογή, ο ιδιοκτήτης δεν μπορεί μονομερώς να αυξήσει το ενοίκιο στη διάρκεια της μίσθωσης."
     }
   };
   
