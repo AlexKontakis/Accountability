@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q&A - Accountability</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
+      var savedLang = localStorage.getItem("lang") || "en";
+      document.documentElement.setAttribute("data-lang", savedLang);
+      document.documentElement.lang = savedLang;
+    })();
+  </script>
+</head>
+<body>
+  <div id="top" class="top-anchor"></div>
+  <a href="#contact" class="call-bar" data-i18n="callBar">📞 Get in touch today!</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html#top" class="logo">
+        <img src="Full_logo.png" alt="Accountability">
+      </a>
+      <nav class="nav">
+        <button class="lang-toggle" type="button" aria-label="Switch to Greek">
+          <span class="lang-label lang-label-gr" aria-hidden="true">ΕΛ</span>
+          <span class="lang-label lang-label-en" aria-hidden="true">EN</span>
+        </button>
+        <a href="index.html#top" data-i18n="nav.home">Home</a>
+        <a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="index.html#services" data-i18n="nav.services">Services</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
+        <span class="theme-icon theme-icon-moon" aria-hidden="true">☽</span>
+      </button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blank layout section utilizing your existing structural container classes -->
+    <section class="services">
+      <div class="container">
+        <header class="section-header">
+          <h2 data-i18n="qna.title">Questions &amp; Answers</h2>
+          <p data-i18n="qna.subtitle">Find quick answers to common structural, tax, and accounting inquiries.</p>
+        </header>
+
+        <div class="qna-content">
+          <!-- Your specific Q&A accordion lists or layout blocks go here -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <header class="section-header light">
+          <h2 data-i18n="contact.title">Contact Us</h2>
+        </header>
+        <div class="contact-details">
+          <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">123 Main Street, City, 00000</span></p>
+          <p><span class="contact-icon">📞</span> 210-000-0000</p>
+          <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
+          <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.copyright">&copy; 2026 Accountability. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
