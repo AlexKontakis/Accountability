@@ -5,7 +5,7 @@ const translations = {
       "nav.home": "Home",
       "nav.reviews": "Reviews",
       "nav.services": "Services",
-      "nav.qna": "Frequently Asked Questions",
+      "nav.qna": "FAQ",
       "nav.contact": "Contact",
       "nav.openMenu": "Open menu",
       "lang.switchToEl": "Switch to Greek",
