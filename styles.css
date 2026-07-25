@@ -859,3 +859,116 @@ img {
     gap: 0.5rem;
   }
 }
+
+/* ==========================================
+   Communication Box Component
+   ========================================== */
+.contact-box {
+  max-width: 580px;
+  margin: 2rem auto 0;
+  padding: 2.5rem 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  text-align: left;
+  transition: background-color 0.25s ease, border-color 0.25s ease;
+}
+
+.contact-box h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--text-on-green);
+  margin-bottom: 0.5rem;
+}
+
+.contact-box p.contact-desc {
+  font-size: 0.925rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.contact-box .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.contact-box label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-on-green);
+  margin-bottom: 0.5rem;
+}
+
+.contact-box input[type="email"],
+.contact-box textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text-on-green);
+  background: var(--body-white-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-box input[type="email"]::placeholder,
+.contact-box textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.contact-box input[type="email"]:focus,
+.contact-box textarea:focus {
+  border-color: var(--button-orange);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+.contact-box textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit Button & Status State */
+.contact-box .submit-btn {
+  width: 100%;
+  padding: 0.85rem 1.75rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--button-orange);
+  color: var(--text-on-orange);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.35);
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s, opacity 0.2s;
+}
+
+.contact-box .submit-btn:hover:not(:disabled) {
+  background: var(--button-orange-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(249, 115, 22, 0.45);
+}
+
+.contact-box .submit-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.contact-box .response-status {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-on-green);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 480px) {
+  .contact-box {
+    padding: 1.75rem 1.25rem;
+  }
+}
