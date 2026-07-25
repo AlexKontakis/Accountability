@@ -4,6 +4,7 @@
 
   /* Bright mode */
   --header-blue: #002327;
+  --call-bar-bg: #002327;
   --header-blue-dark: #004047;
   --body-white: #ffffff;
   --body-grey: #f0f0f0;
@@ -117,7 +118,7 @@ img {
   display: block;
 }
 
-/* Header (red) */
+
 .call-bar {
   display: block;
   background: var(--header-blue-dark);
@@ -973,4 +974,48 @@ img {
   .contact-box {
     padding: 1.75rem 1.25rem;
   }
+}
+
+/*Top Bar*/
+.top-bar {
+  background: var(--header-blue-dark);
+  color: var(--text-on-red);
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.top-bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.top-bar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+.top-bar-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.top-bar-socials a {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
 }
