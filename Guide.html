@@ -12,7 +12,7 @@
     (function () {
       var saved = localStorage.getItem("theme");
       document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
-      var savedLang = localStorage.getItem("lang") || "en";
+      var savedLang = localStorage.getItem("lang") || "el";
       document.documentElement.setAttribute("data-lang", savedLang);
       document.documentElement.lang = savedLang;
     })();

@@ -16,7 +16,8 @@
   --button-orange-light: #fb923c;
 
   /* Text & utility */
-  --text-on-red: #000000;
+  --text-on-red: #ffffff;
+  --text-on-grey: #000000;
   --text-on-green: #1a1a1a;
   --text-muted: #555555;
   --text-on-yellow: #1a1a1a;
@@ -43,6 +44,7 @@
   --body-grey: #252536;
   --body-white-bg: #0f0f18;
   --body-grey-bg: #0f0f18;
+  --text-on-grey: #ffffff;
   --footer-yellow: #a16207;
   --footer-yellow-dark: #854d0e;
   --text-on-red: #f0f0f5;
@@ -454,7 +456,7 @@ img {
 }
 
 .section-header.light h2 {
-  color: var(--text-on-red);
+  color: var(--text-on-grey);
 }
 
 .services {
@@ -759,7 +761,7 @@ img {
 }
 
 .contact-details p {
-  color: var(--text-on-red);
+  color: var(--text-on-grey);
   font-size: 1.05rem;
   display: flex;
   align-items: center;

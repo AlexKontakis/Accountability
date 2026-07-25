@@ -12,7 +12,7 @@
     (function () {
       var saved = localStorage.getItem("theme");
       document.documentElement.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
-      var savedLang = localStorage.getItem("lang") || "en";
+      var savedLang = localStorage.getItem("lang") || "el";
       document.documentElement.setAttribute("data-lang", savedLang);
       document.documentElement.lang = savedLang;
     })();
@@ -55,16 +55,6 @@
       <div class="container">
         <header class="section-header">
           <h2>Contact</h2>
-          <!--form action="https://api.web3forms.com/submit" method="POST">
-                < Your secret access key provided by the service >
-                <input type="hidden" name="access_key" value="fd6ebe49-1b90-4e25-a51c-09b72cf596c5">
-
-               
-                <p type="email" name="email" placeholder="al3x.k0ntakis@gmail.com">
-                <textarea name="message" placeholder="Your Message" required></textarea>
-
-                <button type="submit">Send Message</button>
-          </form-->
           <form id="contact-form">
             <input type="email" id="email" required placeholder="Your Email">
             <textarea id="message" required placeholder="Your Message"></textarea>
