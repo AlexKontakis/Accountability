@@ -1,38 +1,37 @@
-// File path: api/contact.js
 const nodemailer = require('nodemailer');
 
 module.exports = async (req, res) => {
-  // 1. Only allow POST requests
+  // Handle CORS preflight check if needed
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+
+  // Ensure it's a POST request
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
-  const { email, message, honeypot } = req.body;
+  const { email, message, honeypot } = req.body || {};
 
-  // 2. Anti-spam honeypot check
   if (honeypot) {
-    return res.status(200).json({ status: 'success' }); // Silent reject for spam bots
+    return res.status(200).json({ status: 'success' });
   }
 
-  // 3. Validate form input
   if (!email || !message) {
     return res.status(400).json({ error: 'Email and message are required.' });
   }
 
-  // 4. Configure SMTP transport using your accountability.gr cPanel details
-  const transporter = nodemailer.createTransport({
-    host: 'mail.accountability.gr',
-    port: 465,
-    secure: true, // Port 465 uses SSL/TLS
-    auth: {
-      user: 'info@accountability.gr',
-      // Still uses an environment variable for safety so your password isn't exposed in source control
-      pass: '1925@192a', 
-    },
-  });
-
   try {
-    // 5. Send the email directly to info@accountability.gr
+    const transporter = nodemailer.createTransport({
+      host: 'mail.accountability.gr',
+      port: 465,
+      secure: true,
+      auth: {
+        user: 'info@accountability.gr',
+        pass: '1925@192a',
+      },
+    });
+
     await transporter.sendMail({
       from: '"Website Contact Form" <info@accountability.gr>',
       to: 'info@accountability.gr',
