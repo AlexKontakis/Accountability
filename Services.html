@@ -33,7 +33,9 @@
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
-          <span data-i18n="contact.address">123 Main Street, City, 00000</span>
+          <a href="https://maps.app.goo.gl/iqP9QmSRq5YBjn6n8" class="top-bar-item">
+            <span data-i18n="contact.address">123 Main Street, City, 00000</span>
+          </a>
         </div>
       </div>
 
@@ -67,7 +69,7 @@
         <a href="index.html#top" data-i18n="nav.home">Home</a>
         <a href="Guide.html" data-i18n="guide.title">Guide</a>
         <a href="QnA.html" class="btn-nav-qna" data-i18n="nav.qna">Q&amp;A</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="Contact.html" data-i18n="nav.contact">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
         <span class="theme-icon theme-icon-sun" aria-hidden="true">☀</span>
@@ -84,122 +86,153 @@
   <main>
     <section class="services" id="services">
       <div class="container">
-        <header class="section-header">
-          <h2 data-i18n="services.title">Our Services</h2>
-          <p data-i18n="services.subtitle">We design solutions tailored to the specific needs of your business or personal finances.</p>
-        </header>
-        <div class="services-carousel" aria-roledescription="carousel">
-          <button class="carousel-btn carousel-prev" type="button" data-i18n-aria="services.prev" aria-label="Previous services" disabled>
-            &#8249;
-          </button>
-          <div class="services-viewport">
-            <div class="services-track">
-              <article class="service-card popular">
-                <span class="badge" data-i18n="services.popular">Popular</span>
-                <div class="service-icon">🛡️</div>
-                <h3 data-i18n="services.s1.title">Personal Tax Package</h3>
-                <p class="service-price" data-i18n="services.s1.price">From €100 / year</p>
-                <p class="service-tagline" data-i18n="services.s1.tagline">For Individuals</p>
-                <ul>
-                  <li data-i18n="services.s1.l1"><strong>Tax Return:</strong> Placeholder filing support</li>
-                  <li data-i18n="services.s1.l2"><strong>Property Records:</strong> Placeholder declaration help</li>
-                  <li data-i18n="services.s1.l3"><strong>Benefit Claims:</strong> Placeholder application review</li>
-                  <li data-i18n="services.s1.l4"><strong>Debt Guidance:</strong> Placeholder payment planning</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <div class="service-icon">💼</div>
-                <h3 data-i18n="services.s2.title">Business Accounting</h3>
-                <p class="service-price" data-i18n="services.s2.price">From €250 / month</p>
-                <p class="service-tagline" data-i18n="services.s2.tagline">For Companies</p>
-                <ul>
-                  <li data-i18n="services.s2.l1"><strong>Bookkeeping:</strong> Placeholder ledger management</li>
-                  <li data-i18n="services.s2.l2"><strong>Reporting:</strong> Placeholder monthly statements</li>
-                  <li data-i18n="services.s2.l3"><strong>MyData Sync:</strong> Placeholder digital compliance</li>
-                  <li data-i18n="services.s2.l4"><strong>Year-End Close:</strong> Placeholder annual review</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <div class="service-icon">👥</div>
-                <h3 data-i18n="services.s3.title">Payroll Services</h3>
-                <p class="service-price" data-i18n="services.s3.price">From €80 / month</p>
-                <p class="service-tagline" data-i18n="services.s3.tagline">For Employers</p>
-                <ul>
-                  <li data-i18n="services.s3.l1"><strong>Salary Processing:</strong> Placeholder payroll runs</li>
-                  <li data-i18n="services.s3.l2"><strong>Employee Records:</strong> Placeholder HR filing</li>
-                  <li data-i18n="services.s3.l3"><strong>Contribution Reports:</strong> Placeholder social security</li>
-                  <li data-i18n="services.s3.l4"><strong>Payslip Issuance:</strong> Placeholder payment docs</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <div class="service-icon">📊</div>
-                <h3 data-i18n="services.s4.title">VAT & Tax Filing</h3>
-                <p class="service-price" data-i18n="services.s4.price">From €150 / quarter</p>
-                <p class="service-tagline" data-i18n="services.s4.tagline">For Traders</p>
-                <ul>
-                  <li data-i18n="services.s4.l1"><strong>VAT Returns:</strong> Placeholder submission cycle</li>
-                  <li data-i18n="services.s4.l2"><strong>Tax Estimates:</strong> Placeholder liability review</li>
-                  <li data-i18n="services.s4.l3"><strong>Deadline Tracking:</strong> Placeholder reminder system</li>
-                  <li data-i18n="services.s4.l4"><strong>Audit Prep:</strong> Placeholder document checks</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <div class="service-icon">📈</div>
-                <h3 data-i18n="services.s5.title">Financial Advisory</h3>
-                <p class="service-price" data-i18n="services.s5.price">Custom pricing</p>
-                <p class="service-tagline" data-i18n="services.s5.tagline">For Growth</p>
-                <ul>
-                  <li data-i18n="services.s5.l1"><strong>Cash Flow:</strong> Placeholder forecast review</li>
-                  <li data-i18n="services.s5.l2"><strong>Tax Planning:</strong> Placeholder strategy session</li>
-                  <li data-i18n="services.s5.l3"><strong>Investment Review:</strong> Placeholder portfolio check</li>
-                  <li data-i18n="services.s5.l4"><strong>Business Plans:</strong> Placeholder financial modeling</li>
-                </ul>
-              </article>
-
-              <article class="service-card">
-                <div class="service-icon">🚀</div>
-                <h3 data-i18n="services.s6.title">Startup Support</h3>
-                <p class="service-price" data-i18n="services.s6.price">From €300 / setup</p>
-                <p class="service-tagline" data-i18n="services.s6.tagline">For New Businesses</p>
-                <ul>
-                  <li data-i18n="services.s6.l1"><strong>Company Setup:</strong> Placeholder registration help</li>
-                  <li data-i18n="services.s6.l2"><strong>License Guidance:</strong> Placeholder compliance steps</li>
-                  <li data-i18n="services.s6.l3"><strong>Grant Applications:</strong> Placeholder funding support</li>
-                  <li data-i18n="services.s6.l4"><strong>First-Year Books:</strong> Placeholder onboarding plan</li>
-                </ul>
-              </article>
-            </div>
+        <header class="service-header">
+          <h1 data-i18n="services.title">Λογιστική Υποστήριξη Επιχειρήσεων</h1>
+          <p data-i18n="services.subtitle"></p>
+          <div class="service-sub-header">
+            <h3>Οι Βασικοί Πυλώνες των Υπηρεσιών μας</h3>
+            <ul>
+              <li>Δόμηση & Καθοδήγηση Εσωτερικών Λογιστηρίων Για τις εταιρείες που επιλέγουν να διατηρούν αυτόνομο λογιστικό τμήμα, αναλαμβάνουμε τον πλήρη σχεδιασμό, την οργάνωση και τη διαρκή επιστημονική εποπτεία της λειτουργίας του.</li>
+              <li>Ψηφιακός Μετασχηματισμός & Μηχανογράφηση Συμβάλλουμε στην ενίσχυση της εταιρικής παραγωγικότητας, προτείνοντας και παραμετροποιώντας τα κατάλληλα ERP και μηχανογραφικά συστήματα για την ορθολογική καταγραφή και επεξεργασία όλων των εμπορικών και οικονομικών δεδομένων.</li>
+              <li>Παρακολούθηση Απλογραφικών & Διπλογραφικών Βιβλίων Παρέχουμε ολοκληρωμένη υποστήριξη σε κάθε ελεύθερο επαγγελματία και εταιρεία (Α.Ε., Ε.Π.Ε., Ι.Κ.Ε. κ.λπ.) που υποχρεούται στην τήρηση βιβλίων Β’ ή Γ’ κατηγορίας, διασφαλίζοντας την απόλυτη εναρμόνιση με τα ισχύοντα τζίρων και νομικών μορφών.</li>
+              <li>Κατάρτιση Χρηματοοικονομικών Αναφορών Αναλαμβάνουμε την έκδοση όλων των απαραίτητων λογιστικών καταστάσεων βάσει των Ελληνικών Λογιστικών Προτύπων (Ν. 4308/2014), λαμβάνοντας υπόψη το μέγεθος, τον κύκλο εργασιών και το ανθρώπινο δυναμικό της επιχείρησής σας.</li>
+              <li>Διαχείριση Μισθοδοσίας & HR Υποστήριξη Η έκδοση της μισθοδοσίας αποτελεί σύνθετη διαδικασία που απαιτεί βαθιά γνώση του εργατικού, ασφαλιστικού και φορολογικού δικαίου. Μέσω σύγχρονων και ευέλικτων λογισμικών, προσφέρουμε πλήρη και ξεκάθαρη εικόνα για όλα τα μισθολογικά στοιχεία και τις υποχρεώσεις του προσωπικού σας.</li>
+            </ul>
+            
           </div>
-          <button class="carousel-btn carousel-next" type="button" data-i18n-aria="services.next" aria-label="Next services">
-            &#8250;
-          </button>
-        </div>
-        <div class="services-actions">
-          <p class="carousel-status" aria-live="polite">Showing services 1–3 of 6</p>
-          <button type="button" class="btn btn-outline-dark services-expand-btn" aria-expanded="false" data-i18n="services.viewAll">
-            View All Services
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="container contact-inner">
-        <header class="section-header light">
-          <h2 data-i18n="contact.title">Contact Us</h2>
+          
         </header>
-        <div class="contact-details">
-          <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">123 Main Street, City, 00000</span></p>
-          <p><span class="contact-icon">📞</span> 210-000-0000</p>
-          <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
-          <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
+
+        <!-- Alternating Zigzag Layout -->
+        <div class="services-zigzag">
+          
+          <!-- Service 1 (Left) -->
+          <details class="service-accordion-item left">
+            <summary class="service-accordion-header">
+              <div class="service-header-info">
+                <span class="service-icon"></span>
+                <div>
+                  <h3>Φοροτεχνικός Σχεδιασμός & Συμβουλευτική</h3>
+                  
+                </div>
+              </div>
+              <span class="accordion-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="service-accordion-body">
+              <span class="service-price" >Σε ένα περιβάλλον όπου οι φορολογικοί κανόνες αναθεωρούνται διαρκώς, η έγκαιρη και ορθή πληροφόρηση αποτελεί στρατηγικό πλεονέκτημα. Στόχος μας είναι η πλήρης εναρμόνιση των πελατών μας με το ισχύον πλαίσιο, ώστε να προλαμβάνονται δυσάρεστες εκπλήξεις, όπως εκπρόθεσμες επιβαρύνσεις, πρόστιμα και επιπλέον φόροι.</span>
+              <ul>
+                <li> Ίδρυση & Σύσταση Εταιρειών Σχεδιάζουμε και υλοποιούμε άμεσα όλες τις απαραίτητες ενέργειες για την έναρξη οποιασδήποτε εταιρικής μορφής, αναλύοντας το τρέχον φορολογικό καθεστώς προκειμένου να διασφαλίσουμε τη γρήγορη έναρξη της δραστηριότητάς σας.</li>
+                <li>Συμβουλευτική & Φορολογική Υποστήριξη Μελετάμε τις ιδιαιτερότητες κάθε επαγγελματία ή επιχείρησης και διαμορφώνουμε ένα εξατομικευμένο φορολογικό πλάνο, συμβάλλοντας ουσιαστικά στην ανάπτυξη και τον εκσυγχρονισμό της δραστηριότητάς σας.</li>
+                <li>Προετοιμασία & Υποβολή Φορολογικών Δηλώσεων Αναλαμβάνουμε την υπεύθυνη σύνταξη και ηλεκτρονική κατάθεση των εντύπων Ε1, Ε2 και Ε3 για φυσικά πρόσωπα, ατομικές επιχειρήσεις και εταιρείες, εκμηδενίζοντας τους κινδύνους που κρύβει η διαδικασία.</li>
+                <li>Διαχείριση Φορολογίας Ακινήτων Παρέχουμε πλήρη καθοδήγηση για τη φορολόγηση των εισοδημάτων από ακίνητη περιουσία (εκμίσθωση, υπεκμίσθωση, ιδιοχρησιμοποίηση ή δωρεάν παραχώρηση), η οποία εκκαθαρίζεται αυτοτελώς βάσει της ισχύουσας κλίμακας (15% για εισόδημα έως 12.000€, 35% από 12.001€ έως 35.000€ και 45% για ποσά άνω των 35.000€).</li>
+                <li>Δηλώσεις Παρακρατούμενων Φόρων Διεκπεραιώνουμε τις διαδικασίες που αφορούν την παρακράτηση και απόδοση φόρων στην πηγή, ανάλογα με τη φύση του εισοδήματος και τις ισχύουσες διατάξεις.</li>
+                <li>Υποστήριξη σε Φορολογικούς Ελέγχους Σε συνεργασία με εξειδικευμένους νομικούς, στεκόμαστε δίπλα σας σε κάθε στάδιο ελέγχου από τις αρμόδιες αρχές (ΑΑΔΕ, ΔΟΥ, ΕΛ.ΚΕ., ΣΔΟΕ κ.λπ.). Παρέχουμε στρατηγική καθοδήγηση από την έναρξη των ερευνών έως την έκδοση των τελικών πράξεων, ενώ αναλαμβάνουμε και τη σύνταξη ενδικοφανών προσφυγών σε περίπτωση αμφισβήτησης των καταλογισθέντων φόρων.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="service-accordion-item right">
+            <summary class="service-accordion-header">
+              <div class="service-header-info">
+                <span class="service-icon"></span>
+                <div>
+                  <h3>Νομικές, Χρηματοδοτικές & Λοιπές Υπηρεσίες</h3>
+                  
+                </div>
+              </div>
+              <span class="accordion-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="service-accordion-body">
+              <span class="service-price" >Οι σύγχρονες ανάγκες των επιχειρήσεων ξεπερνούν τα όρια της απλής λογιστικής παρακολούθησης. Προσφέρουμε ένα διευρυμένο φάσμα υποστήριξης που θωρακίζει τη λειτουργία σας.</span>
+              <ul>
+                <li>Εταιρική & Εμπορική Νομική Κάλυψη Σε συνεργασία με έμπειρους δικηγόρους, παρέχουμε συμβουλευτική υποστήριξη και νομική εκπροσώπηση για εμπορικές συμβάσεις, εταιρικές υποθέσεις, καθώς και ζητήματα ποινικού ή διοικητικού-φορολογικού δικαίου.</li>
+                <li>Διαχείριση Απαιτήσεων & Δικαστική Εκτέλεση Υποστηρίζουμε τις επιχειρήσεις σε όλη τη διαδικασία διεκδίκησης και είσπραξης οφειλών από τρίτους, από τις αρχικές εξώδικες ενέργειες έως την έκδοση διαταγών πληρωμής.</li>
+                <li>Εξωδικαστικός Μηχανισμός Ρύθμισης Οφειλών Αναλαμβάνουμε την ψηφιακή διαδικασία ρύθμισης χρεών προς χρηματοδοτικούς φορείς, ΑΑΔΕ και ΕΦΚΑ. Εξετάζουμε τις προϋποθέσεις για πιθανή μερική διαγραφή οφειλών (έως 75-95% σε προσαυξήσεις/πρόστιμα Δημοσίου και έως 80-100% σε βασική οφειλή/τόκους τραπεζών) και διεκδικούμε μακροχρόνια πλάνα αποπληρωμής (έως 240 δόσεις για το Δημόσιο και έως 180-420 δόσεις για χρηματοδοτικούς φορείς).</li>
+                <li>Ρυθμίσεις Χρεών & Χρηματοδοτήσεις Παρακολουθούμε διαρκώς τα ενεργά προγράμματα πάγιων ή έκτακτων ρυθμίσεων για οφειλές σε δημόσιο και ταμεία.</li>
+                <li>Αναπτυξιακά & Επιδοτούμενα Προγράμματα Αξιοποιούμε τα διαθέσιμα χρηματοδοτικά εργαλεία (ΕΣΠΑ κ.λπ.) για νέες ή υφιστάμενες επιχειρήσεις, βοηθώντας σας να εξασφαλίσετε επιδοτήσεις που μπορούν να καλύψουν έως και το 100% της επενδυτικής σας πρότασης.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="service-accordion-item left">
+            <summary class="service-accordion-header">
+              <div class="service-header-info">
+                <span class="service-icon"></span>
+                <div>
+                  <h3>Εξειδικευμένες Υπηρεσίες για Ιδιώτες</h3>
+                  
+                </div>
+              </div>
+              <span class="accordion-chevron" aria-hidden="true">▼</span>
+            </summary>
+            <div class="service-accordion-body">
+              <span class="service-price" >Προσφέρουμε ολοκληρωμένη καθοδήγηση στους ιδιώτες για τη σωστή διεκδίκηση των δικαιωμάτων τους και τη διεκπεραίωση γραφειοκρατικών εκκρεμοτήτων.</span>
+              <ul>
+                <li>Διεκπεραίωση Κοινωνικών Επιδομάτων Αναλαμβάνουμε τον έλεγχο των κριτηρίων και την υποβολή αιτήσεων για μια σειρά από κρατικές ενισχύσεις και παροχές, όπως:
+                  <ul>
+                    <li>Επίδομα Ανεργίας (ΔΥΠΑ)</li>
+                    <li>Ελάχιστο Εγγυημένο Εισόδημα & Επίδομα Στέγασης</li>
+                    <li>Επίδομα Θέρμανσης & Κοινωνικό Οικιακό Τιμολόγιο (ΚΟΤ)</li>
+                    <li>Επιδόματα Γέννησης, Μητρότητας και Παιδιού</li>
+                    <li>Φοιτητικό Στεγαστικό Επίδομα & Μεταφορικό Ισοδύναμο</li>
+                  </ul>
+                </li>
+                <li>Μεταφορά Φορολογικής Κατοικίας στο Εξωτερικό Υποστηρίζουμε τη διαδικασία μετάβασης στη ΔΟΥ Κατοίκων Εξωτερικού (έντυπο Δ210). Αναλαμβάνουμε τη συγκέντρωση και τον έλεγχο όλων των απαραίτητων δικαιολογητικών (πιστοποιητικά κατοικίας, συμβάσεις εργασίας, μισθωτήρια κ.λπ.), διασφαλίζοντας ότι δεν συντρέχουν λόγοι απόρριψης της αίτησης (όπως η ύπαρξη ενεργών ατομικών επιχειρήσεων ή συμμετοχή ως διαχειριστής/εταίρος σε εταιρείες στην Ελλάδα).</li>
+              </ul>
+            </div>
+          </details>
+
+          
+
         </div>
       </div>
     </section>
   </main>
+  <section class="contact" id="contact">
+      <div class="container contact-inner">
+        <header class="section-header light">
+          <!--h2 data-i18n="contact.title">Contact Us</h2-->
+        </header>
+
+        <!-- Wrapper to force side-by-side layout -->
+        <div class="contact-grid">
+          
+          <!-- Block 1: About text -->
+          <div class="contact-col">
+            <h2>Ο σκοπός μας</h2>
+            <p>
+              Η Accountability αναλαμβάνει τη συνολική λογιστική, φοροτεχνική και συμβουλευτική υποστήριξη της επιχείρησής σας, διασφαλίζοντας την εύρυθμη λειτουργία και την πλήρη εναρμόνισή της με τη νομοθεσία. Από τα πρώτα στάδια της ίδρυσης μέχρι την καθημερινή διαχείριση, γινόμαστε ο έμπιστος συνεργάτης σας, προσφέροντας απόλυτο έλεγχο και έγκυρη ενημέρωση.
+            </p>
+          </div>
+
+          <!-- Block 2: Useful Links -->
+          <div class="contact-col">
+            <h2>Χρήσιμοι Σύνδεσμοι</h2>
+            <ul class="contact-links">
+              <li><a href="https://www.gsis.gr/">Taxis Net</a></li>
+              <li><a href="https://keaprogram.gr/pubnr">Κοινωνικό εισόδημα αλληλεγγύης</a></li>
+              <li><a href="https://www.koinonikomerisma.gr/">Κοινωνικό Μέρισμα</a></li>
+              <li><a href="https://www.e-efka.gov.gr/el">ΕΦΚΑ</a></li>
+              <li><a href="https://www.e-efka.gov.gr/el">ΙΚΑ</a></li>
+              <li><a href="https://www.e-efka.gov.gr/el">ΟΑΕΕ</a></li>
+              <li><a href="http://www.oaed.gr/">ΑΟΕΔ</a></li>
+            </ul>
+          </div>
+
+          <!-- Block 3: Contact Details -->
+          <div class="contact-details contact-col">
+            <h2>Πληροφορίες</h2>
+            <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">123 Main Street, City, 00000</span></p>
+            <p><span class="contact-icon">📞</span> 210-000-0000</p>
+            <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
+            <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
 
   <footer class="footer">
     <div class="container">
