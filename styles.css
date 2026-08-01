@@ -9,16 +9,16 @@
   --body-white: #ffffff;
   --body-grey: #f0f0f0;
   --body-white-bg: #ffffff;
-  --body-grey-bg: #cacaca;
-  --footer-yellow: #facc15;
-  --footer-yellow-dark: #ca8a04;
+  --body-grey-bg: #004047;
+  --footer-yellow: #858585;
+  --footer-yellow-dark: #555555;
   --button-orange: #f97316;
   --button-orange-dark: #ea580c;
   --button-orange-light: #fb923c;
 
   /* Text & utility */
   --text-on-red: #ffffff;
-  --text-on-grey: #000000;
+  --text-on-grey: #ffffff;
   --text-on-green: #1a1a1a;
   --text-muted: #555555;
   --text-on-yellow: #1a1a1a;
@@ -563,6 +563,7 @@ img {
   display: block;
   font-weight: 700;
   color: var(--button-orange-dark);
+  padding: 1rem 0;
   font-size: 0.875rem;
 }
 
@@ -751,6 +752,7 @@ img {
 
 .contact-col {
   flex: 1;
+  color: var(--text-on-grey);
 }
 
 .contact-col h2 {
