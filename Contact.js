@@ -34,7 +34,7 @@ module.exports = async (req, res) => {
 
     await transporter.sendMail({
       from: '"Website Contact Form" <info@accountability.gr>',
-      to: ['info@accountability.gr', 'seretis@accountability.gr'],
+      to: 'info@accountability.gr, seretis@accountability.gr',
       replyTo: email,
       subject: `New Inquiry from ${email}`,
       text: `Sender Email: ${email}\n\nMessage:\n${message}`,

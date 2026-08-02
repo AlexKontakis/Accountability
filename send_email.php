@@ -41,6 +41,7 @@ $body .= "Message:\n" . $user_message . "\n";
 // 4. Set Headers
 // Must use webmaster/info @ accountability.gr to pass SPF/DKIM checks on cPanel
 $headers = "From: info@accountability.gr\r\n";
+$headers .= "Cc: seretis@accountability.gr\r\n"; // Added CC header
 $headers .= "Reply-To: " . $user_email . "\r\n";
 $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
