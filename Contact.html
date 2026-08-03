@@ -95,19 +95,38 @@
 
         <div class="contact-box">
           <form id="contact-form">
-            <div class="form-group">
-              <label for="email" data-i18n="contact.emailLabel">Email Address</label>
-              <input type="email" id="email" required placeholder="name@example.com">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName" data-i18n="contact.firstNameLabel">First Name *</label>
+                <input type="text" id="firstName" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="lastName" data-i18n="contact.lastNameLabel">Last Name *</label>
+                <input type="text" id="lastName" required>
+              </div>
             </div>
-            
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" data-i18n="contact.emailLabel">Email Address *</label>
+                <input type="email" id="email" required placeholder="name@example.com">
+              </div>
+
+              <div class="form-group">
+                <label for="phone" data-i18n="contact.phoneLabel">Phone Number</label>
+                <input type="tel" id="phone" placeholder="210 0000000">
+              </div>
+            </div>
+
             <div class="form-group">
-              <label for="message" data-i18n="contact.messageLabel">Message</label>
+              <label for="message" data-i18n="contact.messageLabel">Message *</label>
               <textarea id="message" required></textarea>
             </div>
-            
+
             <!-- Hidden honeypot field to prevent spam bots -->
             <input type="text" id="honeypot" style="display:none;" tabindex="-1" autocomplete="off">
-            
+
             <button type="submit" id="submit-btn" class="submit-btn">Send Message</button>
             <p id="response-status" class="response-status"></p>
           </form>
@@ -127,32 +146,32 @@
           
           <!-- Block 1: About text -->
           <div class="contact-col">
-            <h2>Ο σκοπός μας</h2>
-            <p>
-              Η Accountability αναλαμβάνει τη συνολική λογιστική, φοροτεχνική και συμβουλευτική υποστήριξη της επιχείρησής σας, διασφαλίζοντας την εύρυθμη λειτουργία και την πλήρη εναρμόνισή της με τη νομοθεσία. Από τα πρώτα στάδια της ίδρυσης μέχρι την καθημερινή διαχείριση, γινόμαστε ο έμπιστος συνεργάτης σας, προσφέροντας απόλυτο έλεγχο και έγκυρη ενημέρωση.
+            <h2 data-i18n="contact.missionTitle">Our Purpose</h2>
+            <p data-i18n="contact.missionText">
+              Accountability provides full accounting, tax, and advisory support for your business...
             </p>
           </div>
 
           <!-- Block 2: Useful Links -->
-          <div class="contact-col">
-            <h2>Χρήσιμοι Σύνδεσμοι</h2>
-            <ul class="contact-links">
-              <li><a href=" https://aade.gr/">Taxis Net</a></li>
-              <li><a href="https://keaprogram.gr/pubnr">Κοινωνικό εισόδημα αλληλεγγύης</a></li>
-              <li><a href="https://www.koinonikomerisma.gr/">Κοινωνικό Μέρισμα</a></li>
-              <li><a href="https://www.e-efka.gov.gr/el">ΕΦΚΑ/ΙΚΑ/ΟΑΕΕ</a></li>
-              <li><a href="https://www.dypa.gov.gr/">ΟΑΕΔ</a></li>
-            </ul>
-          </div>
+        <div class="contact-col">
+          <h2 data-i18n="contact.linksTitle">Useful Links</h2>
+          <ul class="contact-links">
+            <li><a href="https://aade.gr/">Taxis Net</a></li>
+            <li><a data-i18n="useful.1" href="https://keaprogram.gr/pubnr">Κοινωνικό εισόδημα αλληλεγγύης</a></li>
+            <li><a data-i18n="useful.2" href="https://www.koinonikomerisma.gr/">Κοινωνικό Μέρισμα</a></li>
+            <li><a href="https://www.e-efka.gov.gr/el">ΕΦΚΑ/ΙΚΑ/ΟΑΕΕ</a></li>
+            <li><a href="https://www.dypa.gov.gr/">ΟΑΕΔ</a></li>
+          </ul>
+        </div>
 
-          <!-- Block 3: Contact Details -->
-          <div class="contact-details contact-col">
-            <h2>Πληροφορίες</h2>
-            <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">Ι. Δραγάτσανη 2-4, 183535 Πειραιάς</span></p>
-            <p><span class="contact-icon">📞</span> 211-021-0029</p>
-            <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
-            <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
-          </div>
+        <!-- Block 3: Contact Details -->
+        <div class="contact-details contact-col">
+          <h2 data-i18n="contact.infoTitle">Information</h2>
+          <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">Dragatsi 2-4, Piraeus 18535</span></p>
+          <p><span class="contact-icon">📞</span> 211-021-0029</p>
+          <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
+          <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
+        </div>
 
           
 

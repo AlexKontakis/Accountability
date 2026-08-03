@@ -21,12 +21,16 @@ if (!empty($data['honeypot'])) {
 }
 
 // Extract and sanitize input fields
-$userEmail = filter_var(trim($data['email'] ?? ''), FILTER_VALIDATE_EMAIL);
+$firstName   = htmlspecialchars(trim($data['firstName'] ?? ''), ENT_QUOTES, 'UTF-8');
+$lastName    = htmlspecialchars(trim($data['lastName'] ?? ''), ENT_QUOTES, 'UTF-8');
+$phone       = htmlspecialchars(trim($data['phone'] ?? ''), ENT_QUOTES, 'UTF-8');
+$userEmail   = filter_var(trim($data['email'] ?? ''), FILTER_VALIDATE_EMAIL);
 $userMessage = htmlspecialchars(trim($data['message'] ?? ''), ENT_QUOTES, 'UTF-8');
 
-if (!$userEmail || empty($userMessage)) {
+// Required fields check (First Name, Last Name, Email, Message)
+if (empty($firstName) || empty($lastName) || !$userEmail || empty($userMessage)) {
     http_response_code(400);
-    echo json_encode(['error' => 'Please provide a valid email and message.']);
+    echo json_encode(['error' => 'Please fill in all required fields and provide a valid email.']);
     exit;
 }
 
@@ -34,8 +38,10 @@ if (!$userEmail || empty($userMessage)) {
 $to = 'roditi@accountability.gr, seretis@accountability.gr';
 $subject = 'New Website Contact Form Submission';
 
-$emailBody = "You have received a new contact form message:\n\n";
-$emailBody .= "Sender Email: " . $userEmail . "\n\n";
+$emailBody  = "You have received a new contact form message:\n\n";
+$emailBody .= "Name: " . $firstName . " " . $lastName . "\n";
+$emailBody .= "Email: " . $userEmail . "\n";
+$emailBody .= "Phone: " . ($phone !== '' ? $phone : 'Not provided') . "\n\n";
 $emailBody .= "Message:\n" . $userMessage . "\n";
 
 // Define Email Headers

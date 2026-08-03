@@ -46,12 +46,12 @@
   --body-white-bg: #0f0f18;
   --body-grey-bg: #0f0f18;
   --text-on-grey: #ffffff;
-  --footer-yellow: #a16207;
-  --footer-yellow-dark: #854d0e;
+  --footer-yellow: #002327;
+  --footer-yellow-dark: #001b1e;
   --text-on-red: #f0f0f5;
   --text-on-green: #e8e8f0;
   --text-muted: #a8a8bc;
-  --text-on-yellow: #fef3c7;
+  --text-on-yellow: #ffffff;
   --text-on-orange: #ffffff;
   --card-bg: #1e1e2e;
   --border: rgba(255, 255, 255, 0.1);
@@ -897,8 +897,15 @@ img {
   margin-bottom: 1.5rem;
 }
 
+/* Multi-column row layout for inputs */
+.contact-box .form-row {
+  display: flex;
+  gap: 1.25rem;
+}
+
 .contact-box .form-group {
   margin-bottom: 1.25rem;
+  flex: 1;
 }
 
 .contact-box label {
@@ -909,6 +916,9 @@ img {
   margin-bottom: 0.5rem;
 }
 
+/* Base input styling for text, tel, email, and textarea */
+.contact-box input[type="text"],
+.contact-box input[type="tel"],
 .contact-box input[type="email"],
 .contact-box textarea {
   width: 100%;
@@ -923,12 +933,16 @@ img {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.contact-box input[type="text"]::placeholder,
+.contact-box input[type="tel"]::placeholder,
 .contact-box input[type="email"]::placeholder,
 .contact-box textarea::placeholder {
   color: var(--text-muted);
   opacity: 0.7;
 }
 
+.contact-box input[type="text"]:focus,
+.contact-box input[type="tel"]:focus,
 .contact-box input[type="email"]:focus,
 .contact-box textarea:focus {
   border-color: var(--button-orange);
@@ -975,10 +989,16 @@ img {
   color: var(--text-on-green);
 }
 
-/* Responsive adjustment for small screens */
-@media (max-width: 480px) {
+/* Responsive adjustment for mobile screens */
+@media (max-width: 576px) {
   .contact-box {
     padding: 1.75rem 1.25rem;
+  }
+
+  /* Stack side-by-side inputs vertically on mobile */
+  .contact-box .form-row {
+    flex-direction: column;
+    gap: 0;
   }
 }
 
