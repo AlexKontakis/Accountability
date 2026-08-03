@@ -40,11 +40,6 @@
       </div>
 
       <div class="top-bar-socials">
-        <!--a href="https://www.facebook.com/share/r/1LdRC17VoG/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-          </svg>
-        </a-->
         <a href="https://www.instagram.com/accountability_pro/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -90,23 +85,24 @@
       <div class="container">
         <header class="section-header">
           <h2 data-i18n="contact.formTitle">Send Us a Message</h2>
-          <!--p data-i18n="contact.formSubtitle">We would love to hear from you. Fill out the form below and we'll reply as soon as possible.</p-->
         </header>
 
         <div class="contact-box">
           <form id="contact-form">
+            <!-- Row 1: First Name & Last Name -->
             <div class="form-row">
               <div class="form-group">
                 <label for="firstName" data-i18n="contact.firstNameLabel">First Name *</label>
-                <input type="text" id="firstName" required>
+                <input type="text" id="firstName" required placeholder="John">
               </div>
-              
+
               <div class="form-group">
                 <label for="lastName" data-i18n="contact.lastNameLabel">Last Name *</label>
-                <input type="text" id="lastName" required>
+                <input type="text" id="lastName" required placeholder="Doe">
               </div>
             </div>
 
+            <!-- Row 2: Email Address & Phone Number -->
             <div class="form-row">
               <div class="form-group">
                 <label for="email" data-i18n="contact.emailLabel">Email Address *</label>
@@ -115,18 +111,19 @@
 
               <div class="form-group">
                 <label for="phone" data-i18n="contact.phoneLabel">Phone Number</label>
-                <input type="tel" id="phone" placeholder="210 0000000">
+                <input type="tel" id="phone" placeholder="+30 210 0000000">
               </div>
             </div>
 
+            <!-- Message Field -->
             <div class="form-group">
               <label for="message" data-i18n="contact.messageLabel">Message *</label>
-              <textarea id="message" required></textarea>
+              <textarea id="message" required placeholder="Write your message here..."></textarea>
             </div>
-
+            
             <!-- Hidden honeypot field to prevent spam bots -->
             <input type="text" id="honeypot" style="display:none;" tabindex="-1" autocomplete="off">
-
+            
             <button type="submit" id="submit-btn" class="submit-btn">Send Message</button>
             <p id="response-status" class="response-status"></p>
           </form>
@@ -138,7 +135,6 @@
     <section class="contact" id="contact">
       <div class="container contact-inner">
         <header class="section-header light">
-          <!--h2 data-i18n="contact.title">Contact Us</h2-->
         </header>
 
         <!-- Wrapper to force side-by-side layout -->
@@ -153,27 +149,25 @@
           </div>
 
           <!-- Block 2: Useful Links -->
-        <div class="contact-col">
-          <h2 data-i18n="contact.linksTitle">Useful Links</h2>
-          <ul class="contact-links">
-            <li><a href="https://aade.gr/">Taxis Net</a></li>
-            <li><a data-i18n="useful.1" href="https://keaprogram.gr/pubnr">Κοινωνικό εισόδημα αλληλεγγύης</a></li>
-            <li><a data-i18n="useful.2" href="https://www.koinonikomerisma.gr/">Κοινωνικό Μέρισμα</a></li>
-            <li><a href="https://www.e-efka.gov.gr/el">ΕΦΚΑ/ΙΚΑ/ΟΑΕΕ</a></li>
-            <li><a href="https://www.dypa.gov.gr/">ΟΑΕΔ</a></li>
-          </ul>
-        </div>
+          <div class="contact-col">
+            <h2 data-i18n="contact.linksTitle">Useful Links</h2>
+            <ul class="contact-links">
+              <li><a href="https://aade.gr/">Taxis Net</a></li>
+              <li><a data-i18n="useful.1" href="https://keaprogram.gr/pubnr">Κοινωνικό εισόδημα αλληλεγγύης</a></li>
+              <li><a data-i18n="useful.2" href="https://www.koinonikomerisma.gr/">Κοινωνικό Μέρισμα</a></li>
+              <li><a href="https://www.e-efka.gov.gr/el">ΕΦΚΑ/ΙΚΑ/ΟΑΕΕ</a></li>
+              <li><a href="https://www.dypa.gov.gr/">ΟΑΕΔ</a></li>
+            </ul>
+          </div>
 
-        <!-- Block 3: Contact Details -->
-        <div class="contact-details contact-col">
-          <h2 data-i18n="contact.infoTitle">Information</h2>
-          <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">Dragatsi 2-4, Piraeus 18535</span></p>
-          <p><span class="contact-icon">📞</span> 211-021-0029</p>
-          <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
-          <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
-        </div>
-
-          
+          <!-- Block 3: Contact Details -->
+          <div class="contact-details contact-col">
+            <h2 data-i18n="contact.infoTitle">Information</h2>
+            <p><span class="contact-icon">📍</span> <span data-i18n="contact.address">Dragatsi 2-4, Piraeus 18535</span></p>
+            <p><span class="contact-icon">📞</span> 211-021-0029</p>
+            <p><span class="contact-icon">✉️</span> info@accountability.gr</p>
+            <p><span class="contact-icon">🕒</span> <span data-i18n="contact.hours">Monday – Friday: 09:00 – 17:00</span></p>
+          </div>
 
         </div>
       </div>
@@ -199,7 +193,10 @@
       statusText.innerText = 'Sending...';
 
       const payload = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
         email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
         message: document.getElementById('message').value,
         honeypot: document.getElementById('honeypot').value
       };
