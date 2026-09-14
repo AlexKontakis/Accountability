@@ -12,9 +12,9 @@
   --body-grey-bg: #004047;
   --footer-yellow: #858585;
   --footer-yellow-dark: #555555;
-  --button-orange: #f97316;
-  --button-orange-dark: #ea580c;
-  --button-orange-light: #fb923c;
+  --button-orange: #020100;
+  --button-orange-dark: #009ff4;
+  --button-orange-light: #009ff4;
 
   /* Text & utility */
   --text-on-red: #ffffff;
@@ -53,6 +53,7 @@
   --text-muted: #a8a8bc;
   --text-on-yellow: #ffffff;
   --text-on-orange: #ffffff;
+  --button-orange: #ffffff;
   --card-bg: #1e1e2e;
   --border: rgba(255, 255, 255, 0.1);
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
@@ -813,7 +814,7 @@ img {
   font-weight: 500;
 }
 
-/* Responsive */
+/* Responsive Navigation & Grid */
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
@@ -897,7 +898,6 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* Multi-column row layout for inputs */
 .contact-box .form-row {
   display: flex;
   gap: 1.25rem;
@@ -916,7 +916,6 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/* Base input styling for text, tel, email, and textarea */
 .contact-box input[type="text"],
 .contact-box input[type="tel"],
 .contact-box input[type="email"],
@@ -954,7 +953,6 @@ img {
   min-height: 120px;
 }
 
-/* Submit Button & Status State */
 .contact-box .submit-btn {
   width: 100%;
   padding: 0.85rem 1.75rem;
@@ -989,13 +987,11 @@ img {
   color: var(--text-on-green);
 }
 
-/* Responsive adjustment for mobile screens */
 @media (max-width: 576px) {
   .contact-box {
     padding: 1.75rem 1.25rem;
   }
 
-  /* Stack side-by-side inputs vertically on mobile */
   .contact-box .form-row {
     flex-direction: column;
     gap: 0;
@@ -1044,4 +1040,134 @@ img {
   display: inline-flex;
   align-items: center;
   color: inherit;
+}
+
+/* ==========================================
+   PDF Guide Section
+   ========================================== */
+.pdf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.pdf-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.pdf-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pdf-item[open] {
+  border-color: var(--button-orange);
+  box-shadow: var(--shadow-lg);
+}
+
+.pdf-item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  color: var(--text-on-green);
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.pdf-item summary:hover {
+  background-color: var(--body-grey);
+}
+
+.pdf-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pdf-item summary::marker {
+  display: none;
+  content: "";
+}
+
+.pdf-summary-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.pdf-icon {
+  flex-shrink: 0;
+  color: var(--button-orange);
+}
+
+.pdf-chevron {
+  flex-shrink: 0;
+  color: var(--button-orange);
+  transition: transform 0.25s ease;
+}
+
+.pdf-item[open] .pdf-chevron {
+  transform: rotate(180deg);
+}
+
+.pdf-body {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+  background: var(--card-bg);
+}
+
+.pdf-description {
+  margin: 1rem 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.pdf-preview {
+  width: 100%;
+  height: 480px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.25rem;
+  background: var(--body-white-bg);
+}
+
+.pdf-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: var(--button-orange);
+  color: var(--text-on-orange);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdf-download-btn:hover {
+  background: var(--button-orange-light);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 576px) {
+  .pdf-item summary {
+    padding: 1rem;
+  }
+  .pdf-body {
+    padding: 0 1rem 1.25rem;
+  }
+  .pdf-preview {
+    height: 340px;
+  }
 }

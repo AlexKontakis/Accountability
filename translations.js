@@ -79,7 +79,15 @@ const translations = {
     "guide.title": "Guide",
     "footer.copyright": "© 2026 Accountability. All rights reserved.",
     "qna.title1": "When is a rent increase legal?",
-    "qna.parag1": "If there is no rent adjustment clause, the landlord cannot unilaterally increase the rent during the lease term. According to the Greek Consumers' Union (EEKE), a rent increase is lawful only when it is stipulated in the signed contract. Specifically, if the contract contains a written clause providing for, say, a 3% annual increase, the landlord may implement it."
+    "qna.parag1": "If there is no rent adjustment clause, the landlord cannot unilaterally increase the rent during the lease term. According to the Greek Consumers' Union (EEKE), a rent increase is lawful only when it is stipulated in the signed contract. Specifically, if the contract contains a written clause providing for, say, a 3% annual increase, the landlord may implement it.",
+    
+    "guide.pdf1.title": "TAX CLEARANCE CERTIFICATE",
+    "guide.pdf2.title": "CERTIFICATE OF INSURANCE COVERAGE / SOCIAL SECURITY CLEARANCE",
+    "guide.pdf3.title": "PAYMENTS VIA IRIS AND CARD",
+    "guide.pdf4.title": "PRINTING OF EFKA NON-SALARIED WORKERS' NOTICE – NEW PLATFORM",
+    "guide.pdf5.title": "E-INVOICE",
+    "guide.pdf6.title": "PRINTING OF BUSINESS AND INDIVIDUAL REGISTRY",
+    "guide.download": "Download"
   },
   el: {
     callBar: "📞 Επικοινωνήστε μαζί μας σήμερα!",
@@ -160,7 +168,15 @@ const translations = {
     "guide.title": "Οδηγός",
     "footer.copyright": "© 2026 Accountability. Με επιφύλαξη παντός δικαιώματος.",
     "qna.title1": "Πότε είναι νόμιμη η αύξηση του ενοικίου",
-    "qna.parag1": "Αν δεν υπάρχει κανένας όρος για αναπροσαρμογή, ο ιδιοκτήτης δεν μπορεί μονομερώς να αυξήσει το ενοίκιο στη διάρκεια της μίσθωσης. Μια αύξηση ενοικίου είναι νόμιμη μόνο όταν προβλέπεται στην υπογεγραμμένη σύμβαση..."
+    "qna.parag1": "Αν δεν υπάρχει κανένας όρος για αναπροσαρμογή, ο ιδιοκτήτης δεν μπορεί μονομερώς να αυξήσει το ενοίκιο στη διάρκεια της μίσθωσης. Μια αύξηση ενοικίου είναι νόμιμη μόνο όταν προβλέπεται στην υπογεγραμμένη σύμβαση...",
+    
+    "guide.pdf1.title": "ΦΟΡΟΛΟΓΙΚΗ ΕΝΗΜΕΡΟΤΗΤΑ",
+    "guide.pdf2.title": "ΑΣΦΑΛΙΣΤΙΚΗ ΕΝΗΜΕΡΟΤΗΤΑ",
+    "guide.pdf3.title": "ΠΛΗΡΩΜΕΣ ΜΕ IRIS ΚΑΙ ΚΑΡΤΑ",
+    "guide.pdf4.title": "ΕΚΤΥΠΩΣΗ ΕΙΔΟΠΟΙΗΣΗ ΕΦΚΑ ΜΗ ΜΙΣΘΩΤΩΝ ΝΕΑ ΠΛΑΤΦΟΡΜΑ",
+    "guide.pdf5.title": "Ε-ΤΙΜΟΛΟΓΙΟ",
+    "guide.pdf6.title": "ΕΚΤΥΠΩΣΗ ΜΗΤΡΩΟΥ ΕΠΙΧΕΙΡΗΣΕΩΝ Κ ΦΥΣΙΚΩΝ ΠΡΟΣΩΠΩΝ",
+    "guide.download": "Λήψη"
   }
 };
 
