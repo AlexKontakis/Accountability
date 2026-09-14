@@ -12,7 +12,7 @@
   --body-grey-bg: #004047;
   --footer-yellow: #858585;
   --footer-yellow-dark: #555555;
-  --button-orange: #020100;
+  --button-orange: #004047;
   --button-orange-dark: #009ff4;
   --button-orange-light: #009ff4;
 
@@ -363,12 +363,10 @@ img {
 .btn-primary {
   background: var(--button-orange);
   color: var(--text-on-orange);
-  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.4);
 }
 
 .btn-primary:hover {
   background: var(--button-orange-light);
-  box-shadow: 0 6px 24px rgba(249, 115, 22, 0.5);
 }
 
 .btn-outline {
@@ -945,7 +943,6 @@ img {
 .contact-box input[type="email"]:focus,
 .contact-box textarea:focus {
   border-color: var(--button-orange);
-  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
 }
 
 .contact-box textarea {
@@ -964,14 +961,14 @@ img {
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 4px 16px rgba(249, 115, 22, 0.35);
+
   transition: transform 0.2s, background 0.2s, box-shadow 0.2s, opacity 0.2s;
 }
 
 .contact-box .submit-btn:hover:not(:disabled) {
   background: var(--button-orange-light);
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(249, 115, 22, 0.45);
+
 }
 
 .contact-box .submit-btn:disabled {
@@ -1158,6 +1155,7 @@ img {
 .pdf-download-btn:hover {
   background: var(--button-orange-light);
   transform: translateY(-2px);
+
 }
 
 @media (max-width: 576px) {
