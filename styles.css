@@ -626,6 +626,11 @@ img {
   color: var(--text-on-green);
 }
 
+.service-accordion-body li > ul {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
 /* ==========================================
    Skills Section
    ========================================== */
@@ -1156,6 +1161,21 @@ img {
   background: var(--button-orange-light);
   transform: translateY(-2px);
 
+}
+
+.qna-paragraph-underlined {
+  text-decoration: underline;
+
+}
+
+.company-compare-accordion-item {
+  width: 100%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
 }
 
 @media (max-width: 576px) {
